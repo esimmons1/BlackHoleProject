@@ -56,7 +56,7 @@ I wanted to create a cool visual model that captures the behavior of black holes
 Stuff you can mess with:  
 -------------------------------------------
 ```python
-- numParticles = 20                # Number of orbiting particles simulating matter  
+- numParticles = 20               # Number of orbiting particles simulating matter  
 - numStars = 150                  # Number of background stars scattered around  
 - eventHorizonRadius = 70         # Radius of the black hole’s event horizon  
 - particleTrailLength = 10        # How long the glowing trails behind particles last  
