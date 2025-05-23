@@ -8,7 +8,7 @@ PVector blackHole;
 
 // Stars in the background
 ArrayList<Star> stars = new ArrayList<Star>();
-int numStars = 150;
+int numStars = 200;
 
 void setup() {
   size(1000, 600); // Canvas size
@@ -155,9 +155,11 @@ class Star {
 
     color[] colors = {
       color(255),
-      color(200, 160, 255),
-      color(160, 220, 255),
-      color(160, 255, 200)
+      color(200, 160, 255), // purple
+      color(160, 220, 255), // blue
+      color(160, 255, 200), // green
+      color(250, 160, 255), // pink
+      color(244, 255, 160)  // yellow
     };
     c = colors[int(random(colors.length))];
   }
@@ -183,7 +185,7 @@ class Star {
   }
 
   void display() {
-    color mainColor = color(red(c), green(c), blue(c), 100);
+    color mainColor = color(red(c), green(c), blue(c), 125);
     stroke(mainColor);
     strokeWeight(3); // Main point for the star
     point(pos.x, pos.y);
